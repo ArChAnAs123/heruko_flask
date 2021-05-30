@@ -14,7 +14,7 @@ with open('boost.pkl', 'rb') as f:
 app = flask.Flask(__name__, template_folder='template')
 
 @app.route('/')
-def home():
+def index():
     return render_template('index.html')
 
 
