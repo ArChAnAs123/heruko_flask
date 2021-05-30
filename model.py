@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 from matplotlib import style
 import pickle
 
-data = pd.read_csv(r'C:\Users\Home\wbp\project\cdat.csv')
+data = pd.read_csv(r'cdat.csv')
 dt = data.iloc[:-1].values
 label = data.iloc[:,-1] 
 from sklearn.preprocessing import LabelEncoder, OneHotEncoder
