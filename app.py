@@ -3,6 +3,7 @@ import os
 
 port = int(os.environ.get("PORT", 5000))
 
+
 import flask
 import pickle
 from flask import render_template,request
@@ -16,6 +17,7 @@ with open('boost.pkl', 'rb') as f:
     mod = pickle.load(f)
 
 app = flask.Flask(__name__, template_folder='template')
+app.listen(int(os.environ.get('PORT', '5000')))
 
 @app.route('/')
 def index():
