@@ -25,3 +25,4 @@ scipy==1.6.2
 sqlparse==0.4.1
 Werkzeug==2.0.1
 xgboost==1.4.2
+apscheduler==3.0.1
